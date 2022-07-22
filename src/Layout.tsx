@@ -1,4 +1,6 @@
 import React from "react";
+// @ts-ignore
+import Div100vh from "react-div-100vh";
 import styled from "styled-components";
 
 interface LayoutProps {
@@ -7,17 +9,11 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => (
   <Page>
-    <Section>{children}</Section>
+    <Div100vh>{children}</Div100vh>
   </Page>
 );
 
 const Page = styled.div`
-  height: 100%;
-  padding-top: 40px;
-`;
-
-const Section = styled.section`
-  display: flex;
   height: 100%;
 `;
 

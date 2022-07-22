@@ -1,9 +1,9 @@
 import { BaseTheme } from "@kim-doan/wdyj-design-system-web";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { User } from "firebase/auth";
 import GlobalStyle from "GlobalStyle";
 import Pages from "pages";
 import React from "react";
-import { QueryClient, QueryClientProvider } from "react-query";
 import { useRecoilState } from "recoil";
 import { authState } from "states/auth";
 import { ThemeProvider } from "styled-components";

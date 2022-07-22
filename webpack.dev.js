@@ -14,7 +14,7 @@ module.exports = merge(common, {
       rewrites: [{ from: /./, to: "/index.html" }],
     },
     hot: true,
-    port: 9395,
+    port: 8093,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, OPTIONS",

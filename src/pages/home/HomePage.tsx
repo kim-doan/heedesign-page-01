@@ -1,5 +1,6 @@
 import React from "react";
 
+import FixedButtonGroup from "components/FixedButtonGroup";
 import Footer from "components/Footer";
 
 import Section1 from "./components/Section1";
@@ -18,6 +19,7 @@ const HomePage = () => (
     <Section5 />
     <Section6 />
     <Footer />
+    <FixedButtonGroup />
   </>
 );
 

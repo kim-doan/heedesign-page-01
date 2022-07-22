@@ -3323,7 +3323,7 @@
 
 "@swc/core-darwin-arm64@1.2.218":
   version "1.2.218"
-  resolved "https://registry.npmjs.org/@swc/core-darwin-arm64/-/core-darwin-arm64-1.2.218.tgz"
+  resolved "https://registry.yarnpkg.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.2.218.tgz#d73f6eedf0aac4ad117e67227d65d65c57657858"
   integrity sha512-aTpFjWio8G0oukN76VtXCBPtFzH0PXIQ+1dFjGGkzrBcU5suztCCbhPBGhKRoWp3NJBwfPDwwWzmG+ddXrVAKg==
 
 "@swc/core-darwin-x64@1.2.218":
@@ -3373,7 +3373,7 @@
 
 "@swc/core-win32-x64-msvc@1.2.218":
   version "1.2.218"
-  resolved "https://registry.yarnpkg.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.2.218.tgz#9f6ba50cac6e3322d844cc24418c7b0ab08f7e0e"
+  resolved "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.2.218.tgz"
   integrity sha512-XYLjX00KV4ft324Q3QDkw61xHkoN7EKkVvIpb0wXaf6wVshwU+BCDyPw2CSg4PQecNP8QGgMRQf9QM7xNtEM7A==
 
 "@swc/core@^1.2.210":
@@ -3789,7 +3789,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@>=12.12.47", "@types/node@>=13.7.0", "@types/node@^18.0.6":
+"@types/node@*", "@types/node@>=12.12.47", "@types/node@>=13.7.0", "@types/node@^18.0.3":
   version "18.0.6"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.0.6.tgz"
   integrity sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==
@@ -3863,7 +3863,7 @@
 
 "@types/react-query@^1.2.9":
   version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@types/react-query/-/react-query-1.2.9.tgz#61df5a0594ea4b90234f9c0fdd8f12a06e331fed"
+  resolved "https://registry.npmjs.org/@types/react-query/-/react-query-1.2.9.tgz"
   integrity sha512-xfVcv5zjC6fGf6axPyKxdXNm9RKK9OFzSIyZeCR3r9h4zDuqSpHc8ilTBtfQ1zU/uCx+tAsB+W6vzdCBMu1jtg==
   dependencies:
     react-query "*"

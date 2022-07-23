@@ -3,18 +3,18 @@ import styled from "styled-components";
 
 const FixedButtonGroup = () => (
   <Group>
-    <ContactAnchor className="kakao" href="https://www.naver.com">
+    <KakaoContactAnchor href="https://www.google.com">
       <span>🎃 </span>
       <p>
         <b>카카오톡</b> 문의하기
       </p>
-    </ContactAnchor>
-    <ContactAnchor className="phone" href="https://www.naver.com">
+    </KakaoContactAnchor>
+    <PhoneContactAnchor href="https://www.naver.com">
       <span>🎃 </span>
       <p>
         지금 바로 <b>전화상담</b>
       </p>
-    </ContactAnchor>
+    </PhoneContactAnchor>
   </Group>
 );
 
@@ -47,16 +47,6 @@ const ContactAnchor = styled.a`
   font-size: 100%;
   text-decoration: none;
 
-  &.kakao {
-    color: #3c1d1d;
-    background-color: #fae000;
-  }
-
-  &.phone {
-    color: #fff;
-    background-color: #3c1d1d;
-  }
-
   @media screen and (min-width: 1280px) {
     font-size: 2rem;
   }
@@ -64,6 +54,16 @@ const ContactAnchor = styled.a`
   @media screen and (min-width: 768px) {
     font-size: 1.5rem;
   }
+`;
+
+const KakaoContactAnchor = styled(ContactAnchor)`
+  color: #3c1d1d;
+  background-color: #fae000;
+`;
+
+const PhoneContactAnchor = styled(ContactAnchor)`
+  color: #fff;
+  background-color: #3c1d1d;
 `;
 
 export default FixedButtonGroup;

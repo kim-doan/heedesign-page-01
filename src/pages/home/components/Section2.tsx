@@ -1,9 +1,9 @@
-import CheckIcon from "asset/checkIcon.png";
-import SectionBackground from "asset/sectionBackground.png";
+import CheckIcon from "assets/checkIcon.png";
+import SectionBackground from "assets/sectionBackground.png";
 import React from "react";
 import styled from "styled-components";
 
-import { fadeIn } from "components/animation";
+import { AnimationWrapper } from "components/Animation";
 
 const Section2 = () => (
   <Area>
@@ -24,7 +24,7 @@ const Section2 = () => (
           </TitleSection3>
         </Title>
         <Card>
-          <CardItem>
+          <CardItem type="fadeUp" delay={600}>
             <CardItemImage />
             <CardItemTextArea>
               <CardItemBoldText>1등 로타리휴대폰에서는</CardItemBoldText>
@@ -39,7 +39,7 @@ const Section2 = () => (
               </CardItemLightText>
             </CardItemTextArea>
           </CardItem>
-          <CardItem>
+          <CardItem type="fadeUp" delay={600}>
             <CardItemImage />
             <CardItemTextArea>
               <CardItemBoldText>1등 로타리휴대폰에서는</CardItemBoldText>
@@ -54,7 +54,7 @@ const Section2 = () => (
               </CardItemLightText>
             </CardItemTextArea>
           </CardItem>
-          <CardItem>
+          <CardItem type="fadeUp" delay={600}>
             <CardItemImage />
             <CardItemTextArea>
               <CardItemBoldText>1등 로타리휴대폰에서는</CardItemBoldText>
@@ -182,7 +182,7 @@ const Card = styled.div`
   }
 `;
 
-const CardItem = styled.div`
+const CardItem = styled(AnimationWrapper)`
   display: flex;
   height: 100%;
   padding: 0.5rem 1rem;
@@ -190,8 +190,6 @@ const CardItem = styled.div`
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: 3px 4px 8.55px 0.45px rgb(0 0 0 / 15%);
-
-  animation: ${fadeIn} 2s 1s infinite linear alternate;
 
   @media (max-width: 1050px) {
     flex-direction: column;

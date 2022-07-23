@@ -55,8 +55,7 @@ const FtInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  justify-content: center;
   margin-top: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.8rem;
@@ -86,7 +85,6 @@ const Wrapper = styled.div`
 
 const Area = styled.div`
   width: 100%;
-
   background-color: #464946;
 `;
 

@@ -26,14 +26,14 @@ const Group = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 4rem;
+  height: 2rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 
   @media screen and (min-width: 1280px) {
     left: 20%;
     width: 60%;
-    height: 5rem;
+    height: 3rem;
     overflow: hidden;
   }
 `;
@@ -48,11 +48,11 @@ const ContactAnchor = styled.a`
   text-decoration: none;
 
   @media screen and (min-width: 1280px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 

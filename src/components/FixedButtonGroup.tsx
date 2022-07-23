@@ -1,16 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
+import kakao from "../assets/contactKakao.png";
+import phone from "../assets/contactPhone.png";
+
 const FixedButtonGroup = () => (
   <Group>
     <KakaoContactAnchor href="https://www.google.com">
-      <span>🎃 </span>
+      <ContactKakaoImg alt="Contact Kakao" src={kakao} />
       <p>
         <b>카카오톡</b> 문의하기
       </p>
     </KakaoContactAnchor>
     <PhoneContactAnchor href="https://www.naver.com">
-      <span>🎃 </span>
+      <ContactPhoneImg alt="Contact Phone" src={phone} />
       <p>
         지금 바로 <b>전화상담</b>
       </p>
@@ -26,7 +29,7 @@ const Group = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 
@@ -44,6 +47,7 @@ const ContactAnchor = styled.a`
   justify-content: center;
   width: 100%;
   height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 100%;
   text-decoration: none;
 
@@ -64,6 +68,31 @@ const KakaoContactAnchor = styled(ContactAnchor)`
 const PhoneContactAnchor = styled(ContactAnchor)`
   color: #fff;
   background-color: #3c1d1d;
+`;
+
+const ContactImg = styled.img`
+  padding-right: 5px;
+  padding-left: 5px;
+`;
+
+const ContactKakaoImg = styled(ContactImg)`
+  @media screen and (min-width: 1280px) {
+    width: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 1.5rem;
+  }
+`;
+
+const ContactPhoneImg = styled(ContactImg)`
+  @media screen and (min-width: 1280px) {
+    width: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 1rem;
+  }
 `;
 
 export default FixedButtonGroup;

@@ -1,5 +1,5 @@
-import CheckIcon from "asset/checkIcon.png";
-import SectionBackground from "asset/sectionBackground.png";
+import CheckIcon from "assets/checkIcon.png";
+import SectionBackground from "assets/sectionBackground.png";
 import React from "react";
 import styled from "styled-components";
 

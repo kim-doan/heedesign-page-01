@@ -2,7 +2,7 @@ import {
   QueryFunction,
   useQuery as useQueryOrigin,
   UseQueryOptions,
-} from "react-query";
+} from "@tanstack/react-query";
 
 import { QueryKeyT } from "lib/constant/queryKeys";
 

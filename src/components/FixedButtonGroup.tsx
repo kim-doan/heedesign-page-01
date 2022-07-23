@@ -6,13 +6,13 @@ import phone from "../assets/contactPhone.png";
 
 const FixedButtonGroup = () => (
   <Group>
-    <KakaoContactAnchor href="https://www.google.com">
+    <KakaoContactAnchor href="https://www.google.com" target="_blank">
       <ContactKakaoImg alt="Contact Kakao" src={kakao} />
       <p>
         <b>카카오톡</b> 문의하기
       </p>
     </KakaoContactAnchor>
-    <PhoneContactAnchor href="https://www.naver.com">
+    <PhoneContactAnchor href="tel: 010-0000-0000">
       <ContactPhoneImg alt="Contact Phone" src={phone} />
       <p>
         지금 바로 <b>전화상담</b>

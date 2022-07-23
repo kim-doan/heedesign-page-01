@@ -76,6 +76,8 @@ const ContactImg = styled.img`
 `;
 
 const ContactKakaoImg = styled(ContactImg)`
+  width: 1.5rem;
+
   @media screen and (min-width: 1280px) {
     width: 2rem;
   }
@@ -86,6 +88,8 @@ const ContactKakaoImg = styled(ContactImg)`
 `;
 
 const ContactPhoneImg = styled(ContactImg)`
+  width: 1rem;
+
   @media screen and (min-width: 1280px) {
     width: 1.5rem;
   }

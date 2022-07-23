@@ -136,7 +136,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg|gif|jpg|xlsx)$/,
+        test: /\.(png|woff|otf|woff2|eot|ttf|svg|gif|jpg|xlsx)$/,
         type: "asset",
         parser: {
           dataUrlCondition: {

@@ -13,10 +13,28 @@ const Section5 = () => (
         <SectionContent>
           <span>사전승낙판매점</span>
         </SectionContent>
+        <SectionLink href="https://www.google.com">
+          <span>링크</span>
+        </SectionLink>
       </Section>
     </Wrapper>
   </Area>
 );
+
+const SectionLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Jalnan;
+  font-size: 1.5rem;
+  color: #202020;
+  text-decoration: none;
+  background-color: #ffce50;
+  border-radius: 40px;
+`;
 
 const SectionContent = styled.div`
   display: flex;
@@ -48,10 +66,13 @@ const SectionIcon = styled.div`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   width: 100%;
-  height: 1800px;
-
-  @media (min-width: 1000px) {
+  height: 80vh;
+  @media (max-width: 1000px) {
+    height: 50vh;
     padding-top: 40px;
   }
 `;
@@ -62,6 +83,8 @@ const Wrapper = styled.div`
   align-items: center;
   max-width: 1280px;
   height: 100%;
+  padding-right: 5rem;
+  padding-left: 5rem;
   margin: 0 auto;
 `;
 

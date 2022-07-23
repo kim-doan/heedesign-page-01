@@ -73,7 +73,6 @@ const Section = styled.div`
   height: 80vh;
   @media (max-width: 1000px) {
     height: 50vh;
-    padding-top: 40px;
   }
 `;
 

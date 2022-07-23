@@ -29,7 +29,7 @@ const Group = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 2.5rem;
+  height: 3.2rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 
@@ -48,7 +48,7 @@ const ContactAnchor = styled.a`
   width: 100%;
   height: 100%;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 100%;
+  font-size: 1.2rem;
   text-decoration: none;
 
   @media screen and (min-width: 1280px) {

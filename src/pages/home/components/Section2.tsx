@@ -3,6 +3,8 @@ import SectionBackground from "asset/sectionBackground.png";
 import React from "react";
 import styled from "styled-components";
 
+import { fadeIn } from "components/animation";
+
 const Section2 = () => (
   <Area>
     <Wrapper>
@@ -188,6 +190,8 @@ const CardItem = styled.div`
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: 3px 4px 8.55px 0.45px rgb(0 0 0 / 15%);
+
+  animation: ${fadeIn} 2s 1s infinite linear alternate;
 
   @media (max-width: 1050px) {
     flex-direction: column;

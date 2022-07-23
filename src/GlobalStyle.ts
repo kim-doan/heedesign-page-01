@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-const Jalnan = require("./asset/Jalnan.ttf");
-const JalnanOtf = require("./asset/JalnanOTF.otf");
+const Jalnan = require("./assets/Jalnan.ttf");
+const JalnanOtf = require("./assets/JalnanOTF.otf");
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

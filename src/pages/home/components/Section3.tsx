@@ -98,7 +98,8 @@ const SectionContent2 = styled.div`
 const SectionImageGroup = styled.div`
   width: 100%;
   height: 50vh;
-  border: 2px solid black;
+  background-color: white;
+  border-radius: 0.5rem;
 `;
 
 const SectionIcon = styled.div`

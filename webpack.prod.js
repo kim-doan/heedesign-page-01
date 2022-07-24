@@ -9,28 +9,17 @@ module.exports = merge(common, {
   mode: "production",
   devtool: "nosources-source-map",
   plugins: [
-    new CopyPlugin([{ from: "public", to: "" }]),
-    // new SentryWebpackPlugin({
-    //   release: version,
-    //   include: "./dist",
-    //   setCommits: {
-    //     repo: "meshkorea/",
-    //     auto: true,
-    //     ignoreMissing: true,
-    //   },
-    //   ignore: [
-    //     "coverage",
-    //     "node_modules",
-    //     "scripts",
-    //     "assetsTransformer.js",
-    //     "babel.config.js",
-    //     "test.setup.js",
-    //     "test.shim.js",
-    //     "webpack.config.js",
-    //     "vendor",
-    //   ],
-    //   silent: true,
-    // }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "public",
+          globOptions: {
+            ignore: ["**/index.html"],
+          },
+        },
+      ],
+      options: {},
+    }),
   ],
   stats: "minimal",
 });

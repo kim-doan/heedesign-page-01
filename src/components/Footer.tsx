@@ -38,25 +38,28 @@ const Footer = () => (
 const FtGroup = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 30vh;
+  height: 30vh;
   padding-top: 30px;
-  @media only screen and (max-width: 1200px) {
+
+  @media only screen and (max-width: 1400px) {
     flex-direction: column;
     align-items: center;
     padding-top: 0;
   }
 `;
-const FtLogo = styled.div``;
+
+const FtLogo = styled.div`
+  padding: 1rem;
+`;
 
 const FtInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.8rem;
   line-height: 1;

@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import FixedButtonGroup from "components/FixedButtonGroup";
 import Footer from "components/Footer";
@@ -19,8 +20,15 @@ const HomePage = () => (
     <Section5 />
     <Section6 />
     <Footer />
+    <FixedButtonArea />
     <FixedButtonGroup />
   </>
 );
+
+const FixedButtonArea = styled.div`
+  width: 100%;
+  height: 3.2rem;
+  background-color: #464946;
+`;
 
 export default HomePage;

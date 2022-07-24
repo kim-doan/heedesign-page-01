@@ -7,5 +7,4 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => <Div100vh>{children}</Div100vh>;
-
 export default Layout;

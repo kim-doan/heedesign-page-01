@@ -45,9 +45,6 @@ const AnimationWrapper = ({
   const ref = useCastedRef<HTMLDivElement>();
   const onScreen = useOnScreen<HTMLDivElement>(ref);
 
-  // eslint-disable-next-line no-console
-  console.log(style);
-
   return (
     <div
       ref={ref}

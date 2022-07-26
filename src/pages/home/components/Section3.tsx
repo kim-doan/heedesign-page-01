@@ -1,5 +1,7 @@
 import FlagIcon from "assets/flagIcon.png";
+import ReviewImage from "assets/reviewImage.png";
 import SectionBackground2 from "assets/sectionBackground2.png";
+import SectionBackground2M from "assets/sectionBackground2M.png";
 import React from "react";
 import styled from "styled-components";
 
@@ -33,7 +35,7 @@ const Section = styled(AnimationWrapper)`
   width: 100%;
   height: 130vh;
   @media (max-width: 1000px) {
-    height: 80vh;
+    height: 110vh;
   }
 `;
 
@@ -41,7 +43,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1280px;
+  max-width: calc(1280px + 15rem);
   height: 100%;
   padding: 0 1rem;
   margin: 0 auto;
@@ -53,6 +55,12 @@ const Area = styled.div`
   background-color: #ff8787;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 900px) {
+    background-image: url(${SectionBackground2M});
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `;
 
 const SectionContent = styled.div`
@@ -96,10 +104,13 @@ const SectionContent2 = styled.div`
 `;
 
 const SectionImageGroup = styled.div`
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 50vh;
-  background-color: white;
-  border-radius: 0.5rem;
+  height: 75vh;
+  background-image: url(${ReviewImage});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 const SectionIcon = styled.div`

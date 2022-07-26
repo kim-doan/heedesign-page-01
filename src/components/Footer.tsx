@@ -1,33 +1,30 @@
+import LogoImg from "assets/logo.png";
 import React from "react";
 import styled from "styled-components";
-
-import LogoImg from "../assets/logo.png";
 
 const Footer = () => (
   <Area>
     <Wrapper>
       <FtGroup>
-        <FtLogo>
-          <img alt="footerLogo" src={LogoImg} />
-        </FtLogo>
+        <FtLogo />
         <FtInfo>
           <InfoItem>
-            <b>상호명</b> : Hee Design
+            <b>상호명</b> : 청춘
           </InfoItem>
           <InfoItem>
-            <b>사업자번호</b> : 839-15-01847
+            <b>사업자번호</b> : 594-78-00353
           </InfoItem>
           <InfoItem>
-            <b>대표자</b> : 안민혁
+            <b>대표자</b> : 이보형
           </InfoItem>
           <InfoItem>
-            <b>TEL</b> : 010-7577-2412
+            <b>TEL</b> : 052-235-5550
           </InfoItem>
+          {/* <InfoItem>
+            <b>위치</b> : 
+          </InfoItem> */}
           <InfoItem>
-            <b>위치</b> : 무거동 신복로터리 농협 옆
-          </InfoItem>
-          <InfoItem>
-            <b>주소</b> : 울산 남구 북부순환도로 3
+            <b>주소</b> : 울산광역시 동구 대학길 86, 1층(화정동)
           </InfoItem>
         </FtInfo>
       </FtGroup>
@@ -47,12 +44,18 @@ const FtGroup = styled.div`
   @media only screen and (max-width: 1400px) {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     padding-top: 0;
   }
 `;
 
 const FtLogo = styled.div`
+  width: 150px;
   padding: 1rem;
+  background-image: url(${LogoImg});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 `;
 
 const FtInfo = styled.div`
@@ -82,7 +85,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1280px;
+  max-width: calc(1280px + 15rem);
   margin: 0 auto;
 `;
 

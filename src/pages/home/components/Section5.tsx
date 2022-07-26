@@ -80,7 +80,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1280px;
+  max-width: calc(1280px + 15rem);
   height: 100%;
   padding-right: 5rem;
   padding-left: 5rem;

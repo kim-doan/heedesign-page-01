@@ -149,9 +149,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      title: "폰싸게하는언니",
-      description: "폰싸게하는언니",
-      url: "https://loremipsum.com",
+      title: "휴대폰#",
+      description: "울산지역 No.1 우대 혜택제공 매장 휴대폰#",
+      url: "https://0522355550.com",
       themeColor: "#fff",
       backgroundThemeColor: "#00bf96",
     }),

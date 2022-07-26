@@ -1,4 +1,7 @@
 import CheckIcon from "assets/checkIcon.png";
+import Section2Icon1 from "assets/section2Icon1.png";
+import Section2Icon2 from "assets/section2Icon2.png";
+import Section2Icon3 from "assets/section2Icon3.png";
 import SectionBackground from "assets/sectionBackground.png";
 import React from "react";
 import styled from "styled-components";
@@ -14,7 +17,7 @@ const Section2 = () => (
             <img src={CheckIcon} height="100%" alt="check" />
           </TitleIcon>
           <TitleSection1>
-            <span>울산 NO.1 휴대폰 성지! 폰싸게파는언니</span>
+            <span>울산 NO.1 휴대폰 성지! 휴대폰#</span>
           </TitleSection1>
           <TitleSection2>
             <span>휴대폰 비쌀이유가 없습니다</span>
@@ -25,47 +28,55 @@ const Section2 = () => (
         </Title>
         <Card>
           <CardItem type="fadeUp" delay={600}>
-            <CardItemImage />
+            <CardItemImage>
+              <img src={Section2Icon1} alt="icon" />
+            </CardItemImage>
             <CardItemTextArea>
-              <CardItemBoldText>1등 로타리휴대폰에서는</CardItemBoldText>
               <CardItemBoldText>
-                저희 매장 별도로 지원으로 최저가 판매합니다.
+                휴대폰#에서는 불가능이란 없습니다
               </CardItemBoldText>
               <CardItemLightText>
-                원래 주는 통신사 혜택, 할인 등으로 말장난 치는일 NO!!
+                휴대폰 관련하여 필요하신 부분이 있으시다면
+              </CardItemLightText>
+              <CardItemLightText>언제든지 말씀해주세요!</CardItemLightText>
+            </CardItemTextArea>
+          </CardItem>
+          <CardItem type="fadeUp" delay={600}>
+            <CardItemImage>
+              <img src={Section2Icon2} alt="icon" />
+            </CardItemImage>
+            <CardItemTextArea>
+              <CardItemBoldText>
+                인터넷, TV 현금 사은품 혜택 모두
+              </CardItemBoldText>
+              <CardItemBoldText>만족하실 수 있도록!</CardItemBoldText>
+              <CardItemLightText>
+                혜택많은 곳, 사은품 잘챙겨주는 곳을 찾고계셨나요? 걱정마세요!
               </CardItemLightText>
               <CardItemLightText>
-                최신폰부터 공짜폰까지 몽땅!! 최저가로!!
+                챙겨드릴 수 있는 모든 것을 아낌없이 챙겨 드립니다
               </CardItemLightText>
             </CardItemTextArea>
           </CardItem>
           <CardItem type="fadeUp" delay={600}>
-            <CardItemImage />
+            <CardItemImage>
+              <img src={Section2Icon3} alt="icon" />
+            </CardItemImage>
             <CardItemTextArea>
-              <CardItemBoldText>1등 로타리휴대폰에서는</CardItemBoldText>
+              <CardItemBoldText>구매후 관리!</CardItemBoldText>
               <CardItemBoldText>
-                저희 매장 별도로 지원으로 최저가 판매합니다.
+                가족분들까지 모두 철저하게 도와드립니다.
               </CardItemBoldText>
               <CardItemLightText>
-                원래 주는 통신사 혜택, 할인 등으로 말장난 치는일 NO!!
+                구매 후 나몰라라 하고 태도 돌변하는 경우 많이보셨죠?
               </CardItemLightText>
               <CardItemLightText>
-                최신폰부터 공짜폰까지 몽땅!! 최저가로!!
-              </CardItemLightText>
-            </CardItemTextArea>
-          </CardItem>
-          <CardItem type="fadeUp" delay={600}>
-            <CardItemImage />
-            <CardItemTextArea>
-              <CardItemBoldText>1등 로타리휴대폰에서는</CardItemBoldText>
-              <CardItemBoldText>
-                저희 매장 별도로 지원으로 최저가 판매합니다.
-              </CardItemBoldText>
-              <CardItemLightText>
-                원래 주는 통신사 혜택, 할인 등으로 말장난 치는일 NO!!
+                저희 휴대폰샵에서는 직영 대리점 출신의 공동대표들이 운영하는
+                매장으로
               </CardItemLightText>
               <CardItemLightText>
-                최신폰부터 공짜폰까지 몽땅!! 최저가로!!
+                구매 후 직원이 바뀌는 일이 절대 없으며 태도 또한 바뀌는 일이
+                절대 없습니다
               </CardItemLightText>
             </CardItemTextArea>
           </CardItem>
@@ -79,8 +90,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1280px;
-  height: 100%;
+  max-width: calc(1280px + 15rem);
   margin: 0 auto;
 `;
 
@@ -88,7 +98,11 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1800px;
+  height: 200vh;
+
+  @media (max-width: 1000px) {
+    height: 200vh;
+  }
 
   @media (min-width: 1000px) {
     padding-top: 40px;
@@ -199,11 +213,14 @@ const CardItem = styled(AnimationWrapper)`
 `;
 
 const CardItemImage = styled.div`
+  display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
   width: 250px;
   height: 250px;
+  padding: 1rem;
   margin: auto;
-  background-color: gray;
   @media (max-width: 1050px) {
     flex: 2;
     margin: 0 auto;
@@ -217,6 +234,9 @@ const CardItemTextArea = styled.div`
   line-height: 1.5;
   @media (max-width: 1050px) {
     flex: 1;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
   }
 `;
 

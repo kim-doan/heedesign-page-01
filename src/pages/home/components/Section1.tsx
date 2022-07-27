@@ -1,3 +1,4 @@
+import mainSection from "assets/mainSection.png";
 import React from "react";
 import styled from "styled-components";
 
@@ -17,7 +18,7 @@ const Section1 = () => (
               <b>우대혜택 제공</b> 매장
             </span>
           </TitleSection2>
-          <TitleSection1 color="#FF8787">
+          <TitleSection1 color="#002D51">
             울산에서 <b>성지</b>를 찾는 <b>한분의 고객도</b> 놓치지 않겠습니다
           </TitleSection1>
         </Title>
@@ -31,6 +32,7 @@ const Title = styled.div`
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Jalnan;
   line-height: 1.5;
+  text-align: center;
 
   @media (max-width: 900px) {
     padding: 1rem;
@@ -39,10 +41,10 @@ const Title = styled.div`
 
 const TitleSection1 = styled.div<{ color?: string }>`
   color: #fff;
+  white-space: word-wrap;
 
   b {
     color: ${(props) => props.color || "#fff"};
-    background-color: rgb(0 0 0 / 60%);
   }
 `;
 const TitleSection2 = styled.div<{ color?: string }>`
@@ -54,12 +56,12 @@ const TitleSection2 = styled.div<{ color?: string }>`
 
   span {
     font-size: 4rem;
-    background-color: rgb(0 0 0 / 60%);
+    background-color: rgb(0 0 0 / 80%);
   }
 
   @media (max-width: 500px) {
     span {
-      font-size: 3.5rem;
+      font-size: 3.7rem;
       white-space: word-wrap;
     }
   }
@@ -68,9 +70,14 @@ const TitleSection2 = styled.div<{ color?: string }>`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 500px) {
+    height: 60vh;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -80,11 +87,17 @@ const Wrapper = styled.div`
   max-width: calc(1280px + 15rem);
   height: 100%;
   margin: 0 auto;
+  background-image: url(${mainSection});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 const Area = styled.div`
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: #ff3629;
 `;
+
+// background-color: #ff3629;
+//   opacity: 0.5;
 
 export default Section1;

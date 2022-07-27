@@ -1,5 +1,6 @@
 import FlagIcon from "assets/flagIcon.png";
 import ReviewImage from "assets/reviewImage.png";
+import ReviewImageM from "assets/reviewImageM.png";
 import SectionBackground2 from "assets/sectionBackground2.png";
 import SectionBackground2M from "assets/sectionBackground2M.png";
 import React from "react";
@@ -35,7 +36,7 @@ const Section = styled(AnimationWrapper)`
   width: 100%;
   height: 130vh;
   @media (max-width: 1000px) {
-    height: 110vh;
+    height: 90vh;
   }
 `;
 
@@ -73,7 +74,7 @@ const SectionContent = styled.div`
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Jalnan;
   font-size: 2.8rem;
-  color: #32a61f;
+  color: #363636;
   text-align: center;
   -webkit-text-stroke: 0.12rem white;
 
@@ -93,7 +94,7 @@ const SectionContent2 = styled.div`
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Jalnan;
   font-size: 2.8rem;
-  color: #ffce50;
+  color: #073b61;
   text-align: center;
   -webkit-text-stroke: 0.12rem white;
 
@@ -111,6 +112,14 @@ const SectionImageGroup = styled.div`
   background-image: url(${ReviewImage});
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 800px) {
+    height: 50vh;
+    background-image: url(${ReviewImageM});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 `;
 
 const SectionIcon = styled.div`

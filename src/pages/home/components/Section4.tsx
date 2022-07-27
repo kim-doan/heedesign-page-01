@@ -25,9 +25,9 @@ const Section4 = () => (
         <CardItem type="fadeUp" delay={600}>
           <CardItemTextArea>
             <CardItemBoldText>가격 신뢰 믿음</CardItemBoldText>
-            <CardItemMiddleText>
+            {/* <CardItemMiddleText>
               직영 대리점 출신의 공동대표들이 운영하는 매장
-            </CardItemMiddleText>
+            </CardItemMiddleText> */}
             <CardItemLightText>매번 바뀌는 이벤트 활동으로,</CardItemLightText>
             <CardItemLightText>
               여러가지 혜택들이 고객님을 기다리고 있습니다.
@@ -39,7 +39,7 @@ const Section4 = () => (
             <CardItemBoldText>
               판매전보다 판매후에 더 잘하는 매장
             </CardItemBoldText>
-            <CardItemMiddleText>상담문의 시 휴대폰#</CardItemMiddleText>
+            {/* <CardItemMiddleText>상담문의 시 휴대폰#</CardItemMiddleText> */}
             <CardItemLightText>
               홈페이지를 통하여 문의주셨다 말씀하시면 추가 할인혜택이 있으니
             </CardItemLightText>
@@ -58,9 +58,9 @@ const Section = styled(AnimationWrapper)`
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   @media (max-width: 1000px) {
-    height: 50vh;
+    height: 60vh;
   }
 `;
 
@@ -121,7 +121,7 @@ const SectionImageGroup = styled.div`
     max-height: auto;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     height: 30vh;
   }
 `;
@@ -183,11 +183,11 @@ const CardItemBoldText = styled.div`
   color: white;
 `;
 
-const CardItemMiddleText = styled.div`
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 0.9rem;
-  color: #ffce50;
-`;
+// const CardItemMiddleText = styled.div`
+//   font-family: "Noto Sans KR", sans-serif;
+//   font-size: 0.9rem;
+//   color: #ffce50;
+// `;
 
 const CardItemLightText = styled.div`
   font-family: "Noto Sans KR", sans-serif;

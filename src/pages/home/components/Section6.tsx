@@ -34,6 +34,7 @@ const Section = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     height: 30vh;
+    padding-top: 1rem;
   }
 `;
 

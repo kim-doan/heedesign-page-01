@@ -8,83 +8,91 @@ import styled from "styled-components";
 
 import { AnimationWrapper } from "components/Animation";
 
-const Section2 = () => (
-  <Area>
-    <Wrapper>
-      <Section>
-        <Title>
-          <TitleIcon>
-            <img src={CheckIcon} height="100%" alt="check" />
-          </TitleIcon>
-          <TitleSection1>
-            <span>울산 NO.1 휴대폰 성지! 휴대폰#</span>
-          </TitleSection1>
-          <TitleSection2>
-            <span>휴대폰 비쌀이유가 없습니다</span>
-          </TitleSection2>
-          <TitleSection3>
-            <span>전국최저가보장</span>
-          </TitleSection3>
-        </Title>
-        <Card>
-          <CardItem type="fadeUp" delay={600}>
-            <CardItemImage>
-              <img src={Section2Icon1} alt="icon" />
-            </CardItemImage>
-            <CardItemTextArea>
-              <CardItemBoldText>
-                휴대폰#에서는 불가능이란 없습니다
-              </CardItemBoldText>
-              <CardItemLightText>
-                휴대폰 관련하여 필요하신 부분이 있으시다면
-              </CardItemLightText>
-              <CardItemLightText>언제든지 말씀해주세요!</CardItemLightText>
-            </CardItemTextArea>
-          </CardItem>
-          <CardItem type="fadeUp" delay={600}>
-            <CardItemImage>
-              <img src={Section2Icon2} alt="icon" />
-            </CardItemImage>
-            <CardItemTextArea>
-              <CardItemBoldText>
-                인터넷, TV 현금 사은품 혜택 모두
-              </CardItemBoldText>
-              <CardItemBoldText>만족하실 수 있도록!</CardItemBoldText>
-              <CardItemLightText>
-                혜택많은 곳, 사은품 잘챙겨주는 곳을 찾고계셨나요? 걱정마세요!
-              </CardItemLightText>
-              <CardItemLightText>
-                챙겨드릴 수 있는 모든 것을 아낌없이 챙겨 드립니다
-              </CardItemLightText>
-            </CardItemTextArea>
-          </CardItem>
-          <CardItem type="fadeUp" delay={600}>
-            <CardItemImage>
-              <img src={Section2Icon3} alt="icon" />
-            </CardItemImage>
-            <CardItemTextArea>
-              <CardItemBoldText>구매후 관리!</CardItemBoldText>
-              <CardItemBoldText>
-                가족분들까지 모두 철저하게 도와드립니다.
-              </CardItemBoldText>
-              <CardItemLightText>
-                구매 후 나몰라라 하고 태도 돌변하는 경우 많이보셨죠?
-              </CardItemLightText>
-              <CardItemLightText>
-                저희 휴대폰샵에서는 직영 대리점 출신의 공동대표들이 운영하는
-                매장으로
-              </CardItemLightText>
-              <CardItemLightText>
-                구매 후 직원이 바뀌는 일이 절대 없으며 태도 또한 바뀌는 일이
-                절대 없습니다
-              </CardItemLightText>
-            </CardItemTextArea>
-          </CardItem>
-        </Card>
-      </Section>
-    </Wrapper>
-  </Area>
-);
+const Section2 = () => {
+  const handleIconClick = () => {
+    window.open(
+      "https://www.ictmarket.or.kr:8443/ajax/ajax3.do?id=PRE0000163234&seq=1&yn=1",
+    );
+  };
+
+  return (
+    <Area>
+      <Wrapper>
+        <Section>
+          <Title>
+            <TitleIcon onClick={handleIconClick}>
+              <img src={CheckIcon} height="100%" alt="check" />
+            </TitleIcon>
+            <TitleSection1>
+              <span>울산 NO.1 휴대폰 성지! 휴대폰#</span>
+            </TitleSection1>
+            <TitleSection2>
+              <span>휴대폰 비쌀이유가 없습니다</span>
+            </TitleSection2>
+            <TitleSection3>
+              <span>전국최저가보장</span>
+            </TitleSection3>
+          </Title>
+          <Card>
+            <CardItem type="fadeUp" delay={600}>
+              <CardItemImage>
+                <img src={Section2Icon1} alt="icon" />
+              </CardItemImage>
+              <CardItemTextArea>
+                <CardItemBoldText>
+                  휴대폰#에서는 불가능이란 없습니다
+                </CardItemBoldText>
+                <CardItemLightText>
+                  휴대폰 관련하여 필요하신 부분이 있으시다면
+                </CardItemLightText>
+                <CardItemLightText>언제든지 말씀해주세요!</CardItemLightText>
+              </CardItemTextArea>
+            </CardItem>
+            <CardItem type="fadeUp" delay={600}>
+              <CardItemImage>
+                <img src={Section2Icon2} alt="icon" />
+              </CardItemImage>
+              <CardItemTextArea>
+                <CardItemBoldText>
+                  인터넷, TV 현금 사은품 혜택 모두
+                </CardItemBoldText>
+                <CardItemBoldText>만족하실 수 있도록!</CardItemBoldText>
+                <CardItemLightText>
+                  혜택많은 곳, 사은품 잘챙겨주는 곳을 찾고계셨나요? 걱정마세요!
+                </CardItemLightText>
+                <CardItemLightText>
+                  챙겨드릴 수 있는 모든 것을 아낌없이 챙겨 드립니다
+                </CardItemLightText>
+              </CardItemTextArea>
+            </CardItem>
+            <CardItem type="fadeUp" delay={600}>
+              <CardItemImage>
+                <img src={Section2Icon3} alt="icon" />
+              </CardItemImage>
+              <CardItemTextArea>
+                <CardItemBoldText>구매후 관리!</CardItemBoldText>
+                <CardItemBoldText>
+                  가족분들까지 모두 철저하게 도와드립니다.
+                </CardItemBoldText>
+                <CardItemLightText>
+                  구매 후 나몰라라 하고 태도 돌변하는 경우 많이보셨죠?
+                </CardItemLightText>
+                <CardItemLightText>
+                  저희 휴대폰샵에서는 직영 대리점 출신의 공동대표들이 운영하는
+                  매장으로
+                </CardItemLightText>
+                <CardItemLightText>
+                  구매 후 직원이 바뀌는 일이 절대 없으며 태도 또한 바뀌는 일이
+                  절대 없습니다
+                </CardItemLightText>
+              </CardItemTextArea>
+            </CardItem>
+          </Card>
+        </Section>
+      </Wrapper>
+    </Area>
+  );
+};
 
 const Wrapper = styled.div`
   display: flex;
@@ -100,11 +108,11 @@ const Section = styled.div`
   width: 100%;
   height: 200vh;
 
-  @media (max-width: 1000px) {
-    height: 200vh;
+  @media (max-width: 1050px) {
+    height: 240vh;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1050px) {
     padding-top: 40px;
   }
 `;
@@ -122,6 +130,7 @@ const TitleIcon = styled.div`
   align-items: center;
   justify-content: center;
   height: 5rem;
+  cursor: pointer;
 `;
 
 const TitleSection1 = styled.div`

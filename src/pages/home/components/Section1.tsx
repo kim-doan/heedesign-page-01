@@ -13,14 +13,14 @@ const Section1 = () => (
           <TitleSection2>
             <span>울산지역</span>
           </TitleSection2>
-          <TitleSection2 color="#FFC21F">
+          <TitleSection2 color="#002D51">
             <span>
               <b>우대혜택 제공</b> 매장
             </span>
           </TitleSection2>
-          <TitleSection1 color="#002D51">
-            울산에서 <b>성지</b>를 찾는 <b>한분의 고객도</b> 놓치지 않겠습니다
-          </TitleSection1>
+          <TitleSection3 color="#002D51">
+            울산에서 성지를 찾는 <b>한분의 고객도</b> 놓치지 않겠습니다
+          </TitleSection3>
         </Title>
       </Section>
     </Wrapper>
@@ -52,18 +52,28 @@ const TitleSection2 = styled.div<{ color?: string }>`
 
   b {
     color: ${(props) => props.color || "#fff"};
+    box-shadow: 0 0.7rem rgb(255 255 255 / 50%);
   }
 
   span {
     font-size: 4rem;
-    background-color: rgb(0 0 0 / 80%);
   }
 
   @media (max-width: 500px) {
     span {
-      font-size: 3.7rem;
+      font-size: 3.5rem;
       white-space: word-wrap;
     }
+  }
+`;
+
+const TitleSection3 = styled.div<{ color?: string }>`
+  color: #14bbb1;
+  white-space: word-wrap;
+  -webkit-text-stroke: 0.05rem white;
+
+  b {
+    color: ${(props) => props.color || "#fff"};
   }
 `;
 

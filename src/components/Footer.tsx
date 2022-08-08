@@ -9,22 +9,22 @@ const Footer = () => (
         <FtLogo />
         <FtInfo>
           <InfoItem>
-            <b>상호명</b> : 청춘
+            <b>상호명</b> : 폰파는 청년
           </InfoItem>
           <InfoItem>
-            <b>사업자번호</b> : 594-78-00353
+            <b>사업자번호</b> : 249-06-01760
           </InfoItem>
           <InfoItem>
-            <b>대표자</b> : 이보형
+            <b>대표자</b> : 강범창
           </InfoItem>
           <InfoItem>
-            <b>TEL</b> : 052-235-5550
+            <b>TEL</b> : 010-5566-1714
           </InfoItem>
           {/* <InfoItem>
             <b>위치</b> : 
           </InfoItem> */}
           <InfoItem>
-            <b>주소</b> : 울산광역시 동구 대학길 86, 1층(화정동)
+            <b>주소</b> : 부산 수영구 호암로29번길 50 자이아파트 상가1층
           </InfoItem>
         </FtInfo>
       </FtGroup>

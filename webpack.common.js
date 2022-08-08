@@ -149,9 +149,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      title: "휴대폰#",
-      description: "울산지역 No.1 우대 혜택제공 매장 휴대폰#",
-      url: "https://0522355550.com",
+      title: "폰파는청년",
+      description: "부산지역 No.1 우대 혜택제공 매장 폰파는청년",
+      url: "https://soooll1.cafe24.com",
       themeColor: "#fff",
       backgroundThemeColor: "#00bf96",
     }),

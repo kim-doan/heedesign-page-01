@@ -11,7 +11,7 @@ import { AnimationWrapper } from "components/Animation";
 const Section3 = () => (
   <Area>
     <Wrapper>
-      <Section type="fadeLeft" delay={1000}>
+      <Section type="fadeLeft" delay={700}>
         <SectionIcon>
           <img src={FlagIcon} height="100%" alt="check" />
         </SectionIcon>
@@ -34,7 +34,7 @@ const Section = styled(AnimationWrapper)`
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  height: 130vh;
+  height: 150vh;
   @media (max-width: 1000px) {
     height: 90vh;
   }

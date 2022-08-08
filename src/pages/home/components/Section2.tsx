@@ -24,7 +24,7 @@ const Section2 = () => {
               <img src={CheckIcon} height="100%" alt="check" />
             </TitleIcon>
             <TitleSection1>
-              <span>울산 NO.1 휴대폰 성지! 휴대폰#</span>
+              <span>부산 NO.1 휴대폰 성지! 폰파는청년</span>
             </TitleSection1>
             <TitleSection2>
               <span>휴대폰 비쌀이유가 없습니다</span>
@@ -34,13 +34,13 @@ const Section2 = () => {
             </TitleSection3>
           </Title>
           <Card>
-            <CardItem type="fadeUp" delay={600}>
+            <CardItem type="fadeUp" delay={480}>
               <CardItemImage>
                 <img src={Section2Icon1} alt="icon" />
               </CardItemImage>
               <CardItemTextArea>
                 <CardItemBoldText>
-                  휴대폰#에서는 불가능이란 없습니다
+                  폰파는청년에서는 불가능이란 없습니다
                 </CardItemBoldText>
                 <CardItemLightText>
                   휴대폰 관련하여 필요하신 부분이 있으시다면
@@ -48,7 +48,7 @@ const Section2 = () => {
                 <CardItemLightText>언제든지 말씀해주세요!</CardItemLightText>
               </CardItemTextArea>
             </CardItem>
-            <CardItem type="fadeUp" delay={600}>
+            <CardItem type="fadeUp" delay={480}>
               <CardItemImage>
                 <img src={Section2Icon2} alt="icon" />
               </CardItemImage>
@@ -65,7 +65,7 @@ const Section2 = () => {
                 </CardItemLightText>
               </CardItemTextArea>
             </CardItem>
-            <CardItem type="fadeUp" delay={600}>
+            <CardItem type="fadeUp" delay={480}>
               <CardItemImage>
                 <img src={Section2Icon3} alt="icon" />
               </CardItemImage>
@@ -78,7 +78,7 @@ const Section2 = () => {
                   구매 후 나몰라라 하고 태도 돌변하는 경우 많이보셨죠?
                 </CardItemLightText>
                 <CardItemLightText>
-                  저희 휴대폰샵에서는 직영 대리점 출신의 공동대표들이 운영하는
+                  저희 폰파는청년에서는 직영 대리점 출신의 공동대표들이 운영하는
                   매장으로
                 </CardItemLightText>
                 <CardItemLightText>
@@ -106,7 +106,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 200vh;
+  height: 220vh;
 
   @media (max-width: 1050px) {
     height: 240vh;

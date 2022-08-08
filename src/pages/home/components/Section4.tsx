@@ -1,5 +1,6 @@
 import FlagIcon from "assets/flagIcon.png";
-import OfficeImage from "assets/officeImage.png";
+import OfficeImage1 from "assets/officeImage1.png";
+import OfficeImage2 from "assets/OfficeImage2.png";
 import SectionBackground3 from "assets/sectionBackground3.png";
 import SectionBackground3M from "assets/sectionBackground3m.png";
 import React from "react";
@@ -15,10 +16,11 @@ const Section4 = () => (
           <img src={FlagIcon} height="100%" alt="check" />
         </SectionIcon>
         <SectionContent>
-          <span>울산 최저가 조건</span>
+          <span>부산 최저가 조건</span>
         </SectionContent>
         <SectionImageGroup>
-          <img src={OfficeImage} height="100%" alt="check" />
+          <img src={OfficeImage1} height="100%" alt="check" />
+          <img src={OfficeImage2} height="100%" alt="check" />
         </SectionImageGroup>
       </Section>
       <Card>
@@ -39,7 +41,7 @@ const Section4 = () => (
             <CardItemBoldText>
               판매전보다 판매후에 더 잘하는 매장
             </CardItemBoldText>
-            {/* <CardItemMiddleText>상담문의 시 휴대폰#</CardItemMiddleText> */}
+            {/* <CardItemMiddleText>상담문의 시 폰파는청년</CardItemMiddleText> */}
             <CardItemLightText>
               홈페이지를 통하여 문의주셨다 말씀하시면 추가 할인혜택이 있으니
             </CardItemLightText>

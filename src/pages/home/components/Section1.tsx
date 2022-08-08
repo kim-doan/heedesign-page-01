@@ -11,7 +11,7 @@ const Section1 = () => (
             소중한 시간 절약하세요! 여기가 진짜입니다!
           </TitleSection1>
           <TitleSection2>
-            <span>울산지역</span>
+            <span>부산,울산지역</span>
           </TitleSection2>
           <TitleSection2 color="#002D51">
             <span>
@@ -19,7 +19,7 @@ const Section1 = () => (
             </span>
           </TitleSection2>
           <TitleSection3 color="#002D51">
-            울산에서 성지를 찾는 <b>한분의 고객도</b> 놓치지 않겠습니다
+            부산에서 성지를 찾는 <b>한분의 고객도</b> 놓치지 않겠습니다
           </TitleSection3>
         </Title>
       </Section>
@@ -97,14 +97,14 @@ const Wrapper = styled.div`
   max-width: calc(1280px + 15rem);
   height: 100%;
   margin: 0 auto;
-  background-image: url(${mainSection});
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const Area = styled.div`
   width: 100%;
+  background-image: url(${mainSection});
   background-color: #ff3629;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 // background-color: #ff3629;

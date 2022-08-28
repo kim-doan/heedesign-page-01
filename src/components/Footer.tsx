@@ -1,4 +1,4 @@
-import LogoImg from "assets/logo.png";
+import LogoImg from "assets/logo2.png";
 import React from "react";
 import styled from "styled-components";
 
@@ -50,7 +50,8 @@ const FtGroup = styled.div`
 `;
 
 const FtLogo = styled.div`
-  width: 150px;
+  width: 300px;
+  height: 7vh;
   padding: 1rem;
   background-image: url(${LogoImg});
   background-repeat: no-repeat;

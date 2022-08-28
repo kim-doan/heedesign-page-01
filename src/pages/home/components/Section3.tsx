@@ -11,7 +11,7 @@ import { AnimationWrapper } from "components/Animation";
 const Section3 = () => (
   <Area>
     <Wrapper>
-      <Section type="fadeLeft" delay={700}>
+      <Section type="fadeLeft" delay={300}>
         <SectionIcon>
           <img src={FlagIcon} height="100%" alt="check" />
         </SectionIcon>

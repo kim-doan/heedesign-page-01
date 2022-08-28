@@ -34,7 +34,7 @@ const Section2 = () => {
             </TitleSection3>
           </Title>
           <Card>
-            <CardItem type="fadeUp" delay={480}>
+            <CardItem type="fadeUp" delay={250}>
               <CardItemImage>
                 <img src={Section2Icon1} alt="icon" />
               </CardItemImage>
@@ -48,7 +48,7 @@ const Section2 = () => {
                 <CardItemLightText>언제든지 말씀해주세요!</CardItemLightText>
               </CardItemTextArea>
             </CardItem>
-            <CardItem type="fadeUp" delay={480}>
+            <CardItem type="fadeUp" delay={250}>
               <CardItemImage>
                 <img src={Section2Icon2} alt="icon" />
               </CardItemImage>
@@ -65,7 +65,7 @@ const Section2 = () => {
                 </CardItemLightText>
               </CardItemTextArea>
             </CardItem>
-            <CardItem type="fadeUp" delay={480}>
+            <CardItem type="fadeUp" delay={250}>
               <CardItemImage>
                 <img src={Section2Icon3} alt="icon" />
               </CardItemImage>

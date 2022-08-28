@@ -11,7 +11,7 @@ import { AnimationWrapper } from "components/Animation";
 const Section4 = () => (
   <Area>
     <Wrapper>
-      <Section type="scaleIn" delay={1000}>
+      <Section type="scaleIn" delay={350}>
         <SectionIcon>
           <img src={FlagIcon} height="100%" alt="check" />
         </SectionIcon>
@@ -19,12 +19,12 @@ const Section4 = () => (
           <span>부산 최저가 조건</span>
         </SectionContent>
         <SectionImageGroup>
-          <img src={OfficeImage1} height="100%" alt="check" />
-          <img src={OfficeImage2} height="100%" alt="check" />
+          <img src={OfficeImage1} width="50%" height="100%" alt="check" />
+          <img src={OfficeImage2} width="50%" height="100%" alt="check" />
         </SectionImageGroup>
       </Section>
       <Card>
-        <CardItem type="fadeUp" delay={600}>
+        <CardItem type="fadeUp" delay={250}>
           <CardItemTextArea>
             <CardItemBoldText>가격 신뢰 믿음</CardItemBoldText>
             {/* <CardItemMiddleText>
@@ -36,7 +36,7 @@ const Section4 = () => (
             </CardItemLightText>
           </CardItemTextArea>
         </CardItem>
-        <CardItem type="fadeUp" delay={600}>
+        <CardItem type="fadeUp" delay={250}>
           <CardItemTextArea>
             <CardItemBoldText>
               판매전보다 판매후에 더 잘하는 매장
@@ -113,9 +113,10 @@ const SectionContent = styled.div`
 const SectionImageGroup = styled.div`
   display: flex;
   justify-content: center;
+  gap: 0.5rem;
   width: 100%;
   height: 60vh;
-  background-color: white;
+  background-color: transparent;
   border-radius: 0.5rem;
 
   img {

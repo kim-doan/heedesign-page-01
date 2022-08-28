@@ -1,3 +1,4 @@
+import Logo from "assets/logo2.png";
 import mainSection from "assets/mainSection.png";
 import React from "react";
 import styled from "styled-components";
@@ -7,6 +8,9 @@ const Section1 = () => (
     <Wrapper>
       <Section>
         <Title>
+          <TitleIcon>
+            <img src={Logo} height="100%" alt="check" />
+          </TitleIcon>
           <TitleSection1>
             소중한 시간 절약하세요! 여기가 진짜입니다!
           </TitleSection1>
@@ -37,6 +41,13 @@ const Title = styled.div`
   @media (max-width: 900px) {
     padding: 1rem;
   }
+`;
+
+const TitleIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
 `;
 
 const TitleSection1 = styled.div<{ color?: string }>`

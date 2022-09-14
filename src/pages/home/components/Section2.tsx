@@ -11,7 +11,13 @@ import { AnimationWrapper } from "components/Animation";
 const Section2 = () => {
   const handleIconClick = () => {
     window.open(
-      "https://www.ictmarket.or.kr:8443/ajax/ajax3.do?id=PRE0000163234&seq=1&yn=1",
+      "https://www.ictmarket.or.kr:8443/ajax/ajax3.do?id=PRE0000140283&seq=1&yn=1",
+    );
+  };
+
+  const handleIconClick2 = () => {
+    window.open(
+      "https://www.ictmarket.or.kr:8443/ajax/ajax3.do?id=PRE0000140555&seq=1&yn=1",
     );
   };
 
@@ -20,9 +26,16 @@ const Section2 = () => {
       <Wrapper>
         <Section>
           <Title>
-            <TitleIcon onClick={handleIconClick}>
-              <img src={CheckIcon} height="100%" alt="check" />
-            </TitleIcon>
+            <div
+              style={{ display: "flex", justifyContent: "center", gap: "20px" }}
+            >
+              <TitleIcon onClick={handleIconClick}>
+                <img src={CheckIcon} height="100%" alt="check" />
+              </TitleIcon>
+              <TitleIcon onClick={handleIconClick2}>
+                <img src={CheckIcon} height="100%" alt="check" />
+              </TitleIcon>
+            </div>
             <TitleSection1>
               <span>부산 NO.1 휴대폰 성지! 폰파는청년</span>
             </TitleSection1>
